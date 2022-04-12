@@ -35,13 +35,21 @@ public class PlayerController : MonoBehaviour
 		GetComponent<Rigidbody>().velocity = forwardDirection * speed * forwardInput;
         //transform.Translate(Vector3.forward * speed * forwardInput);
 		
-		if(Input.GetKeyDown(KeyCode.Space))
-		{
-			TakeDamage(20);
-		}
+		//if(Input.GetKeyDown(KeyCode.Space))
+		//{
+			//TakeDamage(20);
+		//}
 
     }
-	
+
+    void OnCollisionEnter(Collision collisioninfo)
+    {
+        if (collisioninfo.collider.tag=="Enemy")
+        {
+            TakeDamage(20);
+        }
+    }
+
 	void TakeDamage(int damage)
 	{
 		currentHealth -= damage;
