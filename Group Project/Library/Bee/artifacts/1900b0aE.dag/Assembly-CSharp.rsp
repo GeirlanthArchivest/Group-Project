@@ -312,6 +312,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/Healthbar.cs"
+"Assets/Scripts/mainMenu.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Staminabar.cs"
 -langversion:8.0
