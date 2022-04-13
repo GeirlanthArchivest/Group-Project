@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -48,6 +49,11 @@ public class PlayerController : MonoBehaviour
 		{
 			TakeStaminaDamage(20);
 		}
+
+		if (currentHealth == 0)
+		{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
     }
 
     void OnCollisionEnter(Collision collisioninfo)
@@ -69,5 +75,7 @@ public class PlayerController : MonoBehaviour
 		currentStamina -= staminaDamage;
 		Staminabar.SetStamina(currentStamina);
 	}
+
+	
 
 }
