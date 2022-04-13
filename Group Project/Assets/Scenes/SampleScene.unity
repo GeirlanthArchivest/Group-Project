@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -328,7 +328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -358.47644, y: 211.9}
+  m_AnchoredPosition: {x: -358.47644, y: 232.9}
   m_SizeDelta: {x: -875.4846, y: -335.6453}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &674612344
@@ -980,6 +980,7 @@ GameObject:
   - component: {fileID: 1530321170}
   - component: {fileID: 1530321169}
   - component: {fileID: 1530321168}
+  - component: {fileID: 1530321171}
   m_Layer: 5
   m_Name: StaminaBar
   m_TagString: Untagged
@@ -1004,7 +1005,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -358, y: 190.5}
+  m_AnchoredPosition: {x: -358, y: 199.6}
   m_SizeDelta: {x: -875.1249, y: -314.3045}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1530321168
@@ -1096,6 +1097,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530321166}
   m_CullTransparentMesh: 1
+--- !u!114 &1530321171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530321166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20f3240b9fcde43819886b380877e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1530321168}
 --- !u!1 &1723971105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,7 +1222,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  maxStamina: 100
+  currentStamina: 0
   Healthbar: {fileID: 674612347}
+  Staminabar: {fileID: 1530321171}
 --- !u!54 &1915648038
 Rigidbody:
   m_ObjectHideFlags: 0
