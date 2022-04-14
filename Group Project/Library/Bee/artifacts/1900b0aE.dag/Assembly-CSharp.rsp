@@ -314,6 +314,7 @@
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/Healthbar.cs"
 "Assets/Scripts/mainMenu.cs"
+"Assets/Scripts/pauseMenu.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Staminabar.cs"
 -langversion:8.0
