@@ -10,19 +10,17 @@ public class PlayerController : MonoBehaviour
 	public float turnSpeed = 50;
 	public int maxHealth = 100;
 	public int currentHealth;
-	public int maxStamina = 100;
-	public int currentStamina;
+
+
 	
 	public Healthbar Healthbar;
-	public Staminabar Staminabar;
 	
     // Start is called before the first frame update
     void Start()
     {
 		currentHealth = maxHealth;
 		Healthbar.SetMaxHealth(maxHealth);
-		currentStamina = maxStamina;
-		Staminabar.SetMaxStamina(maxStamina);
+
     }
     
 
@@ -45,11 +43,6 @@ public class PlayerController : MonoBehaviour
 		//{
 			//TakeDamage(20);
 		//}
-		
-		if(Input.GetKeyDown(KeyCode.LeftShift))
-		{
-			TakeStaminaDamage(20);
-		}
 
 		if (currentHealth == 0)
 		{
@@ -70,13 +63,5 @@ public class PlayerController : MonoBehaviour
 		currentHealth -= damage;
 		Healthbar.SetHealth(currentHealth);
 	}
-
-	void TakeStaminaDamage(int staminaDamage)
-	{
-		currentStamina -= staminaDamage;
-		Staminabar.SetStamina(currentStamina);
-	}
-
-	
 
 }
