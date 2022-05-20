@@ -9,20 +9,9 @@ public class endMenu : MonoBehaviour
 
     public GameObject endMenuUI;
 
-    void OnCollisionEnter(Collision collisioninfo)
+    void OnTriggerEnter()
     {
-        if (collisioninfo.collider.tag == "Player")
-        {
-            if (GameIsPaused)
-            {
-                Cont();
-            }
-            else
-            {
-                Pause();
-            }
-            Debug.Log("TEST");
-        }
+        Pause();
     }
 
     void Pause()
