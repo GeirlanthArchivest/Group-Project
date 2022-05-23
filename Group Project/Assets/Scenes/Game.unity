@@ -3230,6 +3230,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d513d023850fec143a403b2546a7858f, type: 3}
+--- !u!1 &1735374499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7088516869386737081, guid: 1d72154f631f63c4ca8b75c6487c0a34, type: 3}
+  m_PrefabInstance: {fileID: 7970827463669828249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1735374500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735374499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91f273cbc376b94cabd23de7725c60b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1000071174}
+  playerDistance: 2
+  awareAI: 10
+  AIMoveSpeed: 0
+  damping: 6
+  navPoint: []
+  agent: {fileID: 1735374502}
+  destPoint: 0
+  goal: {fileID: 1984250824}
+--- !u!195 &1735374502 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 1976820339, guid: 1d72154f631f63c4ca8b75c6487c0a34, type: 3}
+  m_PrefabInstance: {fileID: 7970827463669828249}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1743627833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,6 +3522,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1984250824 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7571861754051383043, guid: 1d72154f631f63c4ca8b75c6487c0a34, type: 3}
+  m_PrefabInstance: {fileID: 1669020069}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1997156301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4069,6 +4105,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1976820340, guid: 1d72154f631f63c4ca8b75c6487c0a34, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1976820340, guid: 1d72154f631f63c4ca8b75c6487c0a34, type: 3}
+      propertyPath: lookRadius
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1976820341, guid: 1d72154f631f63c4ca8b75c6487c0a34, type: 3}
       propertyPath: m_Enabled
       value: 1
