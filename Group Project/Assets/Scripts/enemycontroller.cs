@@ -5,8 +5,12 @@ using UnityEngine.AI;
 
 public class enemycontroller : MonoBehaviour
 {
-
+    
     public float lookRadius = 10f;
+    public Transform[] waypoints;
+    int waypointsIndex;
+    Vector3 target2;
+    bool patrol = true;
 
     Transform target;
     NavMeshAgent agent;
@@ -16,15 +20,26 @@ public class enemycontroller : MonoBehaviour
     {
         target = PlayerManager.instance.Player.transform;
         agent = GetComponent<NavMeshAgent>();
+        UpdateDestination();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance(target.position, transform.position);
-
-        if (distance <= lookRadius)
+        if (patrol == true)
         {
+            if (Vector3.Distance(transform.position, target2) < 3)
+            {
+                IterateWaypointIndex();
+                UpdateDestination();
+            }
+        }
+        
+        float distance2 = Vector3.Distance(target.position, transform.position);
+
+        if (distance2 <= lookRadius)  
+        {
+            patrol = false;
             agent.SetDestination(target.position);
         }
     }
@@ -33,5 +48,20 @@ public class enemycontroller : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
+    }
+
+    void UpdateDestination()
+    {
+        target2 = waypoints[waypointsIndex].position;
+        agent.SetDestination(target2);
+    }
+
+    void IterateWaypointIndex()
+    {
+        waypointsIndex++;
+        if (waypointsIndex == waypoints.Length)
+        {
+            waypointsIndex = 0;
+        }
     }
 }
