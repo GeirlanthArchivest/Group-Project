@@ -315,6 +315,7 @@
 "Assets/Scripts/enemycontroller.cs"
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/Healthbar.cs"
+"Assets/Scripts/instructions.cs"
 "Assets/Scripts/mainMenu.cs"
 "Assets/Scripts/pauseMenu.cs"
 "Assets/Scripts/PlayerController.cs"

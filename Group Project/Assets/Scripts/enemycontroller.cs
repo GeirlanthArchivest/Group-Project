@@ -28,7 +28,7 @@ public class enemycontroller : MonoBehaviour
     {
         if (patrol == true)
         {
-            if (Vector3.Distance(transform.position, target2) < 3)
+            if (Vector3.Distance(transform.position, target2) < 4)
             {
                 IterateWaypointIndex();
                 UpdateDestination();
@@ -62,6 +62,7 @@ public class enemycontroller : MonoBehaviour
         if (waypointsIndex == waypoints.Length)
         {
             waypointsIndex = 0;
+            patrol = true;
         }
     }
 }
