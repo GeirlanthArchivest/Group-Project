@@ -25,8 +25,8 @@ public class enemycontroller : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (patrol == true)
+    { 
+        if(patrol == true)
         {
             if (Vector3.Distance(transform.position, target2) < 4)
             {
@@ -34,7 +34,7 @@ public class enemycontroller : MonoBehaviour
                 UpdateDestination();
             }
         }
-        
+
         float distance2 = Vector3.Distance(target.position, transform.position);
 
         if (distance2 <= lookRadius)  
@@ -42,6 +42,8 @@ public class enemycontroller : MonoBehaviour
             patrol = false;
             agent.SetDestination(target.position);
         }
+
+        patrol = true;
     }
 
     void OnDrawGizmosSelected()
@@ -62,7 +64,6 @@ public class enemycontroller : MonoBehaviour
         if (waypointsIndex == waypoints.Length)
         {
             waypointsIndex = 0;
-            patrol = true;
         }
     }
 }
