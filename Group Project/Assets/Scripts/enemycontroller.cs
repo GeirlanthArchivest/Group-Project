@@ -26,7 +26,19 @@ public class enemycontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-        if(patrol == true)
+
+        float distance2 = Vector3.Distance(target.position, transform.position);
+
+        if (distance2 <= lookRadius)
+        {
+            patrol = false;
+            agent.SetDestination(target.position);
+        }
+        else
+        {
+            patrol = true;
+        }
+        if (patrol == true)
         {
             if (Vector3.Distance(transform.position, target2) < 4)
             {
@@ -34,16 +46,6 @@ public class enemycontroller : MonoBehaviour
                 UpdateDestination();
             }
         }
-
-        float distance2 = Vector3.Distance(target.position, transform.position);
-
-        if (distance2 <= lookRadius)  
-        {
-            patrol = false;
-            agent.SetDestination(target.position);
-        }
-
-        patrol = true;
     }
 
     void OnDrawGizmosSelected()

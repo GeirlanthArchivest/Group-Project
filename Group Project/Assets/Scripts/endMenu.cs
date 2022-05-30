@@ -19,6 +19,7 @@ public class endMenu : MonoBehaviour
         endMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+
     }
     public void Cont()
     {
