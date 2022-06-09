@@ -321,7 +321,9 @@
 "Assets/Scripts/pauseMenu.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerManager.cs"
+"Assets/Scripts/pufferController.cs"
 "Assets/Scripts/score.cs"
+"Assets/Scripts/turtleUI.cs"
 -langversion:8.0
 
 /deterministic

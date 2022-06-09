@@ -7,6 +7,7 @@ public class instructions : MonoBehaviour
 {
     public GameObject TheInstructions;
     public int CloseInstruction;
+    
 
     // Update is called once per frame
     void Update()
@@ -36,4 +37,6 @@ public class instructions : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         CloseInstruction = 1;
     }
+
+
 }
