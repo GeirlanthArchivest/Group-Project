@@ -6,12 +6,10 @@ using UnityEngine.UI;
 public class score : MonoBehaviour
 {
     public GameObject ScoreText;
-    public int theScore;
+    public static int theScore;
     
-    void OnTriggerEnter(Collider other)
+    void Update()
     {
-        theScore += 50;
         ScoreText.GetComponentInChildren<Text>().text = "SCORE: " + theScore;
-        Destroy(gameObject);
     }
 }
