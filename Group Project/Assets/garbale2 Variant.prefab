@@ -64,7 +64,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c7deb0c3262a84090bb0d12dae6776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 200
+  lookRadius: 20
+  waypoints: []
 --- !u!1001 &7970827462900984040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -134,7 +135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 94b41793d80474d46beae11a4ca4d330, type: 3}
       propertyPath: m_Name
-      value: garbale2
+      value: garbale2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 94b41793d80474d46beae11a4ca4d330, type: 3}
       propertyPath: m_TagString
