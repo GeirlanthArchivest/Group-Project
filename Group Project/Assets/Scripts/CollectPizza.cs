@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class CollectPizza : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collisioninfo)
     {
-        score.theScore += 50;
-        Destroy(gameObject);
+        if (collisioninfo.collider.tag == "Player")
+        {
+            score.theScore += 50;
+            Destroy(gameObject);
+        }
     }
 }
