@@ -8,7 +8,8 @@ public class endMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject endMenuUI;
-
+    public GameObject endBars;
+    public GameObject endRoom;
     void OnTriggerEnter()
     {
         Pause();
@@ -27,6 +28,8 @@ public class endMenu : MonoBehaviour
         endMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        endBars.SetActive(false);
+        endRoom.SetActive(true);
     }
 
     public void QuitGame()
