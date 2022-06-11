@@ -11,8 +11,6 @@ public class PlayerController : MonoBehaviour
 	public int maxHealth = 100;
 	public int currentHealth;
 
-
-	
 	public Healthbar Healthbar;
 	
     // Start is called before the first frame update
@@ -56,12 +54,30 @@ public class PlayerController : MonoBehaviour
         {
             TakeDamage(20);
         }
+        else if (collisioninfo.collider.tag=="Food")
+        {
+            RecoverHealth(10);
+        }
     }
 
 	void TakeDamage(int damage)
 	{
 		currentHealth -= damage;
 		Healthbar.SetHealth(currentHealth);
+	}
+
+    void RecoverHealth(int recover)
+	{
+        if (currentHealth == 100)
+        {
+
+        }
+        else
+        {
+            currentHealth += recover;
+		    Healthbar.SetHealth(currentHealth);
+        }
+
 	}
 
 }

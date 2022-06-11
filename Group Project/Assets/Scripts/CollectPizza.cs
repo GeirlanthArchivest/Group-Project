@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollectPizza : MonoBehaviour
 {
+
     void OnCollisionEnter(Collision collisioninfo)
     {
         if (collisioninfo.collider.tag == "Player")
