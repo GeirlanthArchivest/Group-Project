@@ -56,7 +56,10 @@ public class PlayerController : MonoBehaviour
         }
         else if (collisioninfo.collider.tag=="Food")
         {
-            RecoverHealth(10);
+            if (currentHealth != maxHealth)
+            {
+                RecoverHealth(10);
+            }
         }
     }
 
