@@ -18,6 +18,7 @@ public class instructions : MonoBehaviour
             {
                 CloseInstruction = 0;
                 TheInstructions.SetActive(false);
+                GetComponent<Collider>().enabled = false;
             }
             else
             {
