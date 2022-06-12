@@ -85,11 +85,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2638}
     - Class: 114
-      Script: {instanceID: 2824}
+      Script: {instanceID: 2826}
     - Class: 114
-      Script: {instanceID: 2910}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 3752}
+      Script: {instanceID: 3754}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -168,25 +168,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2748}
     - Class: 114
-      Script: {instanceID: 2824}
+      Script: {instanceID: 2826}
     - Class: 114
-      Script: {instanceID: 2910}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 3142}
+      Script: {instanceID: 3144}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3356}
     - Class: 114
-      Script: {instanceID: 3752}
+      Script: {instanceID: 3754}
     - Class: 114
-      Script: {instanceID: 3934}
+      Script: {instanceID: 3936}
     - Class: 114
-      Script: {instanceID: 4184}
+      Script: {instanceID: 4186}
     - Class: 114
-      Script: {instanceID: 4304}
+      Script: {instanceID: 4306}
     - Class: 114
-      Script: {instanceID: 4528}
+      Script: {instanceID: 4530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -263,27 +263,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2638}
     - Class: 114
-      Script: {instanceID: 2824}
+      Script: {instanceID: 2808}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2826}
     - Class: 114
-      Script: {instanceID: 2910}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3482}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 3634}
+      Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 3752}
+      Script: {instanceID: 3636}
     - Class: 114
-      Script: {instanceID: 3768}
+      Script: {instanceID: 3754}
     - Class: 114
-      Script: {instanceID: 3862}
+      Script: {instanceID: 3770}
     - Class: 114
-      Script: {instanceID: 4124}
+      Script: {instanceID: 3864}
     - Class: 114
-      Script: {instanceID: 4132}
+      Script: {instanceID: 4126}
     - Class: 114
-      Script: {instanceID: 27102}
+      Script: {instanceID: 4134}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -523,6 +523,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: endMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 70ca9ca745c2ed9001e185fe8bfc8ec5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: settingsMenu
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -817,12 +823,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManager
-  - hash:
-      serializedVersion: 2
-      Hash: 70ca9ca745c2ed9001e185fe8bfc8ec5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: settingsMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
