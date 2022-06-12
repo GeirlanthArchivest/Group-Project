@@ -323,6 +323,7 @@
 "Assets/Scripts/PlayerManager.cs"
 "Assets/Scripts/pufferController.cs"
 "Assets/Scripts/score.cs"
+"Assets/Scripts/settingsMenu.cs"
 "Assets/Scripts/turtleUI.cs"
 -langversion:8.0
 
