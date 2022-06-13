@@ -10,6 +10,9 @@ public class endMenu : MonoBehaviour
     public GameObject endMenuUI;
     public GameObject endBars;
     public GameObject endRoom;
+    public GameObject endText;
+    public GameObject endText1;
+
     void OnTriggerEnter()
     {
         Pause();
@@ -21,6 +24,14 @@ public class endMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
         GetComponent<Collider>().enabled = false;
+        if (score.theScore >= 750)
+        {
+            endText.SetActive(true);
+        }
+        else
+        {
+            endText1.SetActive(true);
+        }
 
     }
     public void Cont()
@@ -28,8 +39,15 @@ public class endMenu : MonoBehaviour
         endMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        endBars.SetActive(false);
-        endRoom.SetActive(true);
+        if (score.theScore >= 750)
+        {
+            endBars.SetActive(false);
+            endRoom.SetActive(true);
+        }
+        else
+        {
+
+        }
     }
 
     public void QuitGame()

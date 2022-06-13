@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 214ff40865e5944449984b4a9712e488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 40
+  lookRadius: 20
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
