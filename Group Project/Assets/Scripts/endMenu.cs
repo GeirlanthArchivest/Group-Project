@@ -8,6 +8,8 @@ public class endMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject endMenuUI;
+    public GameObject endMenuText;
+    public GameObject endMenuText2;
     public GameObject endBars;
     public GameObject endRoom;
     void OnTriggerEnter()
@@ -28,8 +30,6 @@ public class endMenu : MonoBehaviour
         endMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        endBars.SetActive(false);
-        endRoom.SetActive(true);
     }
 
     public void QuitGame()

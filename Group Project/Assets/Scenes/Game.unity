@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.074880324, g: 0.21083489, b: 1.3617938, a: 1}
+  m_IndirectSpecularColor: {r: 0.07488001, g: 0.2108348, b: 1.3617958, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3438,6 +3438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endMenuUI: {fileID: 864237945}
+  endMenuText: {fileID: 512637160}
+  endMenuText2: {fileID: 0}
   endBars: {fileID: 8416272008044306557}
   endRoom: {fileID: 567997308}
 --- !u!1 &843713635
@@ -9558,7 +9560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1976820340, guid: 1d72154f631f63c4ca8b75c6487c0a34, type: 3}
       propertyPath: lookRadius
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1976820340, guid: 1d72154f631f63c4ca8b75c6487c0a34, type: 3}
       propertyPath: waypoints.Array.size
