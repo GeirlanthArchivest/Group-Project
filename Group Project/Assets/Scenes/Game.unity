@@ -2298,6 +2298,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 843db90ec0389384480d6d33a4360555, type: 3}
   m_PrefabInstance: {fileID: 567997307}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &567997312
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567997308}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 843db90ec0389384480d6d33a4360555, type: 3}
 --- !u!1001 &575338764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3438,8 +3452,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endMenuUI: {fileID: 864237945}
-  endMenuText: {fileID: 512637160}
-  endMenuText2: {fileID: 0}
   endBars: {fileID: 8416272008044306557}
   endRoom: {fileID: 567997308}
 --- !u!1 &843713635
