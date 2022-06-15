@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.07488001, g: 0.2108348, b: 1.3617958, a: 1}
+  m_IndirectSpecularColor: {r: 0.074880324, g: 0.21083489, b: 1.3617938, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4534,6 +4534,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2079194102245476309, guid: fef7155d6ac88f448b0726b050ea6eec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2495709209206453380, guid: fef7155d6ac88f448b0726b050ea6eec, type: 3}
       propertyPath: m_Name
       value: imortal lamp
@@ -4556,7 +4560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3020044947943042622, guid: fef7155d6ac88f448b0726b050ea6eec, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 240.0251
+      value: 240.06
       objectReference: {fileID: 0}
     - target: {fileID: 3020044947943042622, guid: fef7155d6ac88f448b0726b050ea6eec, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4584,6 +4588,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3020044947943042622, guid: fef7155d6ac88f448b0726b050ea6eec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259101928457711299, guid: fef7155d6ac88f448b0726b050ea6eec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360400227067406566, guid: fef7155d6ac88f448b0726b050ea6eec, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
